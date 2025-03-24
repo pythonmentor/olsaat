@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 import axios from "axios";
 import ScrollToTop from "./Components/ScrollToTop";
 function App() {
-  const url = import.meta.env.API_URL;
+  const url = import.meta.env.VITE_API_URL;
   const [products, setproducts] = useState([]);
 
   //get iamges

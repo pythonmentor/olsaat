@@ -6,12 +6,6 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS")
 
-DJANGO_VITE = {
-    "default": {
-        "dev_mode": False,
-    },
-}
-
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = env("DJANGO_EMAIL_HOST")
 EMAIL_PORT = env("DJANGO_EMAIL_PORT")

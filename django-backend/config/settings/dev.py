@@ -10,12 +10,6 @@ SECRET_KEY = env(
 
 ALLOWED_HOSTS = []
 
-DJANGO_VITE = {
-    "default": {
-        "dev_mode": False,
-    },
-}
-
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DEFAULT_FROM_EMAIL = env(
     "DJANGO_DEFAULT_FROM_EMAIL", default="olsaat <hello@olsaat.com>"

@@ -18,7 +18,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_extensions",
     "corsheaders",
-    "django_vite",
 ]
 
 MIDDLEWARE = [
