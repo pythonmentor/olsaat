@@ -8,7 +8,7 @@ ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS")
 
 DJANGO_VITE = {
     "default": {
-        "dev_mode": DEBUG,
+        "dev_mode": False,
     },
 }
 

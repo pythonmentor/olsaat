@@ -12,7 +12,7 @@ ALLOWED_HOSTS = []
 
 DJANGO_VITE = {
     "default": {
-        "dev_mode": DEBUG,
+        "dev_mode": False,
     },
 }
 

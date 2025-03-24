@@ -14,20 +14,10 @@ from .models import Product
 api = NinjaAPI()
 
 
-class ProductInSchema(ModelSchema):
-    class Meta:
-        model = Product
-        fields = ["name", "description", "price"]
-
-
 class ProductOutSchema(ModelSchema):
     class Meta:
         model = Product
-        fields = ["name", "description", "price", "image"]
-
-
-class DeleteProductSchema(Schema):
-    id: int
+        fields = ["id", "name", "description", "price", "image"]
 
 
 class ProductItemSchema(Schema):
