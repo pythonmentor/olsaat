@@ -21,6 +21,7 @@ function App() {
         setproducts(
           res.data.map((item) => ({
               ...item,
+              _id: item.id,
               image: url + item.image,
               selected: false,
               amount: 1,
