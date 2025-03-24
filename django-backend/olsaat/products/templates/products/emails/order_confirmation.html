@@ -1,0 +1,20 @@
+<h1>Order Details</h1>
+<p>Name: {{ name }}</p>
+<p>Phone: {{ phone }}</p>
+<p>Address: {{ address }}</p>
+
+<h2>Products:</h2>
+<ul>
+  {% for item in products %}
+    <li>{{ item.name }} - Quantity: {{ item.quantity }} - Unit Price: {{ item.price }} DA - Total: {{ item.total }} DA</li>
+  {% endfor %}
+</ul>
+
+<h3>Total Price: {{ total_price }} DA</h3>
+
+{% if comment %}
+  <h3>User Comment:</h3>
+  <p>{{ comment }}</p>
+{% endif %}
+
+<p>Newsletter Subscription: {{ newsletter }}</p>
