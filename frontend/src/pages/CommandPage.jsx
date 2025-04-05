@@ -14,7 +14,7 @@ export const CommandPage = ({ products, setProduts }) => {
   const [formActive , setFormActive ] = useState(true)
 
   const TOASTDURATION = 5000;
-  const APIPATH = "https://olsaat.com";
+  const APIPATH = import.meta.env.VITE_API_URL;
 
   const [formData, setFormData] = useState({
     name: "",

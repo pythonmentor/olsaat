@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Title } from "../Components/title";
 
-import { LandingProductCard } from "../Components/LandingProductCard";
 import navLogo from "../assets/nav_logo.png";
 import { NavBar } from "../Components/NavBar";
 import { ProductSlide } from "../Components/ProductsSlide";
@@ -12,7 +11,6 @@ import { Bienfaits } from "../Components/Bienfaits";
 import { Footer } from "../Components/Footer";
 import { TitleMobile } from "../Components/TitleMobile";
 import { ProductSlideMobile } from "../Components/ProductsSlideMobile";
-import axios from "axios";
 import { BienvenueMobile } from "../Components/BienvenueMobile";
 
 export const HomePage = ({ products }) => {
